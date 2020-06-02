@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Test from './test/App';
+import Welcome from './components/Welcome';
 
 import './style/index.sass';
 
+const message = 'Hi, welcome to my react blank. I hope it is useful to you';
+
 const App = () => (
   <div className="app">
-    <Test test="Hello" value={150} />
+    <Welcome author="Kinavi" message={message} />
   </div>
 );
 
