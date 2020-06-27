@@ -7,13 +7,12 @@ Responsible for the assembly **Webpack 4.43**
 ##### The form is designed to work on:
  
 - [x] React
-- [ ] Redux
-- [ ] React router
+- [x] Redux
+- [x] React router
 - [x] TS
 - [x] Sass
 - [x] Eslint
 - [x] Jest
-- [ ] Node
 - [ ] Express
 - [ ] MongoDB
 

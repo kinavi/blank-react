@@ -30,7 +30,10 @@ module.exports = {
     'jest',
   ],
   rules: {
+    'no-shadow': 'off',
+    quotes: ['error', 'single', { allowTemplateLiterals: true }],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/jsx-props-no-spreading': 'off',
     'import/extensions': ['error', 'ignorePackages', {
       js: 'never',
       mjs: 'never',
