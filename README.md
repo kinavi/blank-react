@@ -13,7 +13,7 @@ Responsible for the assembly **Webpack 4.43**
 - [x] Sass
 - [x] Eslint
 - [x] Jest
-- [ ] Express
+- [x] Express
 - [ ] MongoDB
 
 ### Main scripts
