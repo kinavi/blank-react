@@ -10,8 +10,8 @@ module.exports = merge(baseConfig, {
     whitelist: [/\.(?!(?:jsx?|json)$).{1,5}$/i],
   })],
   output: {
-    path: path.resolve(__dirname, '../', 'dist', 'server'),
-    filename: 'index.js',
+    path: path.resolve(__dirname, '../', 'dist'),
+    filename: 'server.js',
   },
   module: {
 

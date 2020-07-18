@@ -1,6 +1,6 @@
 import express, { Response, Request } from 'express';
+import path from 'path';
 import passport from './passport';
-
 //= require('passport');
 // import React from 'react';
 // import { renderToString } from 'react-dom/server';
@@ -11,8 +11,10 @@ const app: express.Application = express();
 // app.use('/', (req: Request, res: Response) => {
 //   res.send(renderToString(<Hello />));
 // });
-
-app.use('/', express.static('./dist/client'));
+// './dist/client'
+const pathStatic = path.resolve('./', 'dist/client');
+console.log('pathStatic ->', pathStatic);
+app.use('/', express.static(pathStatic));
 
 // app.post('/login', passport.authenticate('jwt', { session: false }), (req: Request, res: Response) => {
 
