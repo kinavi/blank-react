@@ -12,8 +12,8 @@ const app: express.Application = express();
 //   res.send(renderToString(<Hello />));
 // });
 // './dist/client'
-const pathStatic = path.resolve('./', 'dist/client');
-console.log('pathStatic ->', pathStatic);
+const pathStatic = path.resolve('./dist/client');
+console.log('path to static ->', pathStatic);
 app.use('/', express.static(pathStatic));
 
 // app.post('/login', passport.authenticate('jwt', { session: false }), (req: Request, res: Response) => {
@@ -21,5 +21,5 @@ app.use('/', express.static(pathStatic));
 // });
 
 app.listen(3000, () => {
-  console.log('Hello world! --> http://localhost:3000/');
+  console.log('Server is running --> port 3000');
 });

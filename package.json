@@ -8,7 +8,7 @@
   "scripts": {
     "build:client": "webpack --config=./webpack/client.config.js --mode development",
     "build:server": "webpack --config=./webpack/server.config.js --mode development",
-    "run:server": "node ./dist/server.js",
+    "run:server": "node ./dist/server",
     "dev": "webpack-dev-server --config=./webpack/dev.config.js --mode development",
     "test": "jest --config=jest.config.js --verbose --watch"
   },
