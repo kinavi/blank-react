@@ -2,3 +2,9 @@ node_modules
 yarn-error.log
 dist
 yarn.lock
+package-lock.json
+public
+.firebase
+.env
+.vscode
+.idea

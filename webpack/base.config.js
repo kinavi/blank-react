@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   entry: ['@babel/polyfill', path.resolve(__dirname, '../', 'src', 'client', 'index.tsx')],
   output: {
-    path: path.resolve(__dirname, '../', 'dist', 'client'),
+    path: path.resolve(__dirname, '../', 'dist', 'public'),
     filename: 'index.js',
   },
   module: {
@@ -15,16 +15,11 @@ module.exports = {
       },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              bypassOnDebug: true, // webpack@1.x
-              disable: true, // webpack@2.x and newer
-            },
-          },
-        ],
+        loader: 'file-loader',
+        options: {
+          name: 'public/[contenthash].[ext]',
+          // outputPath: 'public',
+        },
       },
       {
         test: /\.css$/,

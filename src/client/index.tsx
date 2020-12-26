@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Welcome from './components/Welcome';
+import { Welcome } from './components/Welcome';
 
 import './style/index.sass';
 

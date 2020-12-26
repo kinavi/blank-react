@@ -1,10 +1,11 @@
 {
     "include": [
-        "./src/*"
+        "./src/*", "src/constants/constants.ts", "src/container/App.tsx"
     ],
     "compilerOptions": {
         "strict": true,
         "esModuleInterop": true,
+        "target": "es5",
         "lib": [
             "dom",
             "es2015"

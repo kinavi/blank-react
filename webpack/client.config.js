@@ -1,8 +1,6 @@
-const path = require('path');
-// const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 const merge = require('webpack-merge');
 const baseConfig = require('./base.config');
 
@@ -22,11 +20,7 @@ module.exports = merge(baseConfig, {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new CompressionPlugin(),
     new ExtractTextPlugin('style.css'),
-    // new webpack.IgnorePlugin(/jsdom$/),
-    new HtmlWebPackPlugin({
-      template: path.resolve(__dirname, '../', 'html', 'index.html'),
-      title: 'Webpack server',
-    }),
   ],
 });

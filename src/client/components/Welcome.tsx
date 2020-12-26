@@ -5,7 +5,7 @@ type WelcomePropsType = {
     author: string
 }
 
-const Welcome = (porps: WelcomePropsType): JSX.Element => {
+export const Welcome = (porps: WelcomePropsType): JSX.Element => {
   const { message, author } = porps;
   return (
     <div className="welcome">
@@ -21,5 +21,3 @@ const Welcome = (porps: WelcomePropsType): JSX.Element => {
     </div>
   );
 };
-
-export default Welcome;
