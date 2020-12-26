@@ -13,10 +13,15 @@ Responsible for the assembly **Webpack 4.43**
 - [x] Sass
 - [x] Eslint
 - [x] Jest
-- [x] Express
-- [ ] MongoDB
+- [x] ExpressJS
+- [x] MongooseJS
 
 ### Main scripts
 
-- **yarn dev** - starting a local webpack server 
-- **yarn build:client** - starts front end assembly 
+- **yarn build:client** - build client part     
+- **yarn build:server** - build server part    
+- **yarn build:watch:client** - build and watch change src client part
+- **yarn run:watch:server** - build and run server part
+- **yarn run:server** - run server
+- **yarn dev** - run webpack dev mode
+- **yarn test** - run test
